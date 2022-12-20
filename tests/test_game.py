@@ -1,6 +1,6 @@
 from longest_word.game import Game
 import string
-import requests
+#import requests
 
 class TestGame:
     def test_game_initialization(self):
