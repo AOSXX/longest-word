@@ -8,6 +8,7 @@ from longest_word.game import Game
 app = Flask(__name__)
 # Check Configuration section for more details
 SESSION_TYPE = 'filesystem'
+SESSION_FILE_DIR = '/tmp/flask_session'
 app.config.from_object(__name__)
 Session(app)
 
