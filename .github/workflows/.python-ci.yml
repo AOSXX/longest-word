@@ -1,7 +1,9 @@
 name: basic CI
 on:
-  push:
-    pull_request: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+    
 jobs:
   build-and-run-pytest:
     runs-on: ubuntu-latest
