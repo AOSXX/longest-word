@@ -1,7 +1,9 @@
 name: basic CI
 on:
-  pull_request: 
-    types: [opened, reopened, edited]
+  pull_request:
+    branches: [ master, main ]
+
+    
 jobs:
   build-and-run-pytest:
     runs-on: ubuntu-latest
